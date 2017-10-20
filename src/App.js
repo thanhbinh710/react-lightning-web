@@ -8,12 +8,34 @@ import Badge from './components/Badge';
 import TextArea from './components/TextArea';
 import TextFieldInput from './components/TextFieldInput';
 import TextField from './components/TextFieldInput';
+import Tab from './components/Tab';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <TextField label="Label" placeholder="Default Placeholder" />
+        <Tab
+        data={[
+          {
+            name: "ITEM ONE",
+            content: <Badge value="first tab content" />
+          },
+          {
+            name: "ITEM TWO",
+            content: <Badge value="second tab content" />
+          },
+          {
+            name: "ITEM THREE",
+            content: (
+              <img
+                src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Logo.png"
+                width={200}
+              />
+            )
+          }
+        ]}
+      />
       </div>
     );
   }
