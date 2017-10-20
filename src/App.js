@@ -8,12 +8,18 @@ import Badge from './components/Badge';
 import TextArea from './components/TextArea';
 import TextFieldInput from './components/TextFieldInput';
 import TextField from './components/TextFieldInput';
+import RadioGroupExample from './components/RadioGroupExample';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <TextField label="Label" placeholder="Default Placeholder" />
+        <RadioGroupExample
+          value={'3'}
+          color={'#b70000'}
+          colorChecked={'#2a6cd6'}
+        />
       </div>
     );
   }
