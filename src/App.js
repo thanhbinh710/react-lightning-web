@@ -8,12 +8,13 @@ import Badge from './components/Badge';
 import TextArea from './components/TextArea';
 import TextFieldInput from './components/TextFieldInput';
 import TextField from './components/TextFieldInput';
+import Spinner from './components/Spinner';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <TextField label="Label" placeholder="Default Placeholder" />
+        <Spinner size="x-small" color="#000" speed="1000"/>
       </div>
     );
   }
