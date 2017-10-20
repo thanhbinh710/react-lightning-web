@@ -5,9 +5,7 @@ const Input = styled.div`
   cursor : ${props =>
   props.disable === true ? 'not-allowed' : 'pointer'
   };
-  display : flex;
   position: relative;
-	margin: 5px auto;
 	width : 50px;
 	height : 25px;
 	background-color: ${props =>
@@ -32,15 +30,26 @@ const Input = styled.div`
   };
 `;
 
+const Div = styled.div`
+  padding : 5px;
+  display : flex;
+  label {
+  padding : 3px 5px;
+  }
+`
+
 class ToggleButton extends Component {
   render() {
     return (
+      <Div>
+        {this.props.label && <label>{this.props.label}</label>}
       <Input onClick={() => {
         if (!this.props.disable) this.props.onclick(this.props.toggle)
       }} toggle={this.props.toggle} disable={this.props.disable}
         onBackgroundColor={this.props.onBackgroundColor} offBackgroundColor={this.props.offBackgroundColor}>
         <div></div>
       </Input>
+      </Div>
     );
   }
 }
