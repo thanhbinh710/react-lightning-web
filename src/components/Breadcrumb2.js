@@ -26,7 +26,7 @@ const BreadcumbArrow = styled.div`
 `
 
 
-class Breadcrumb extends Component {
+class Breadcrumb2 extends Component {
 
   render() {
     const breadcrumbs = this.props.breadcrumbs;

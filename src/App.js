@@ -8,7 +8,7 @@ import Badge from './components/Badge';
 import TextArea from './components/TextArea';
 import TextFieldInput from './components/TextFieldInput';
 import TextField from './components/TextFieldInput';
-import Breadcrumb from './components/Breadcrumb';
+import Breadcrumb2 from './components/Breadcrumb';
 import DropDownMenu from './components/DropDownMenu';
 
 const breadcrumbs = [
@@ -31,7 +31,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Breadcrumb breadcrumbs={breadcrumbs}/>
+        
       </div>
     );
   }
