@@ -91,7 +91,7 @@ export default class Slider extends Component {
     if (value === this.state.value) {
       return;
     }
-    
+
     if (props.range.min > value) {
       value = props.range.min;
     } else if (props.range.max < value) {
@@ -132,7 +132,7 @@ export default class Slider extends Component {
             min={min}
             max={max}
             value={value}
-            step={step}
+            step={step > 0 ? step : 1}
             onChange={this.handleChange}
           />
           <Value>{value}</Value>
