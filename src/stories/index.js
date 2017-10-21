@@ -7,6 +7,7 @@ import { linkTo } from '@storybook/addon-links';
 import Button from '../components/Button';
 import Badge from '../components/Badge';
 import TextArea from '../components/TextArea';
+import Breadcrumb from '../components/Breadcrumb';
 
 // storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -20,7 +21,28 @@ storiesOf('Badge', module)
 storiesOf('Textarea', module)
 .add('Example', () => <TextArea label="Label" placeholder="Default Placeholder" />);
 
+storiesOf('Breadcrumb', module)
+  .add('Example', () => {
+    const routes = [{
+      path: 'index',
+      name: 'home'
+    }, {
+      path: 'first',
+      name: 'first'
+    }, {
+      path: 'second',
+      name: 'second'
+    }];
 
+    const renderer = (route) => {
+      const last = routes[routes.length - 1]
+      return route === last ? <span>{route.name}</span> : <a href={route.path}>{route.name}</a>
+    }
+
+    return (
+      <Breadcrumb renderer={renderer} routes={routes} />
+    )
+  })
 
 // storiesOf('Button', module)
 // .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
