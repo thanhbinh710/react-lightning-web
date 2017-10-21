@@ -86,19 +86,22 @@ export default class Slider extends Component {
   }
 
   componentWillUpdate(props) {
+    let value = props.value;
+
     if (value === this.state.value) {
       return;
     }
     
-    let value = props.value;
     if (props.range.min > value) {
       value = props.range.min;
     } else if (props.range.max < value) {
       value = props.range.max;
     }
-    this.setState({
-      value,
-    });
+    if (value !== this.state.value) {
+      this.setState({
+        value,
+      });
+    }
   }
 
   render() {
