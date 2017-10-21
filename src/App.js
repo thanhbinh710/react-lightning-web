@@ -8,12 +8,18 @@ import Badge from './components/Badge';
 import TextArea from './components/TextArea';
 import TextFieldInput from './components/TextFieldInput';
 import TextField from './components/TextFieldInput';
+import Breadcrumb from './components/Breadcrumb';
+
+const breadcrumbs = [
+  { name: "PARENT ENTITY", link: "http://google.com" },
+  { name: "PARENT RECORD NAME", link: "http://google.com" },
+];
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <TextField label="Label" placeholder="Default Placeholder" />
+        <Breadcrumb breadcrumbs={breadcrumbs}/>
       </div>
     );
   }
