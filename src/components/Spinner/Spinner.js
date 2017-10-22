@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import './Spinner.css';
 
 const Div = styled.div`
     &::after {

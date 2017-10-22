@@ -8,7 +8,7 @@ import Badge from './components/Badge';
 import TextArea from './components/TextArea';
 import TextFieldInput from './components/TextFieldInput';
 import TextField from './components/TextFieldInput';
-import Spinner from './components/Spinner';
+import Spinner from './components/Spinner/Spinner';
 
 class App extends Component {
   render() {
