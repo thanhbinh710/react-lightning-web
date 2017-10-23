@@ -15,7 +15,7 @@ const Input = styled.span`
     border-radius: .25rem;
 `;
 
-class Button extends Component {
+class Badge extends Component {
 	render(){
 		return (
 			<Input>
@@ -25,4 +25,4 @@ class Button extends Component {
 	}
 }
 
-export default Button;
+export default Badge;
