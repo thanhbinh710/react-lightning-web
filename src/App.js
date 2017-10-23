@@ -14,12 +14,19 @@ import Tab from './components/Tab';
 import RadioGroupExample from './components/RadioGroupExample';
 import Spinner from './components/Spinner/Spinner';
 import Picklist from './components/Picklist';
+import Slider from './components/Slider';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Picklist options={[ 'value1','value2']} onClick={val => console.log(val)} />
+        <Slider
+  range={{min: -9, max: 10}}
+  value={0}
+  step={1}
+  label='Label'
+  onChange={() => {}}
+/>
       </div>
     );
   }
