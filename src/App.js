@@ -10,28 +10,34 @@ import TextFieldInput from './components/TextFieldInput';
 import TextField from './components/TextFieldInput';
 import Breadcrumb2 from './components/Breadcrumb';
 import DropDownMenu from './components/DropDownMenu';
-
-const breadcrumbs = [
-  { name: "PARENT ENTITY", link: "http://google.com" },
-  { name: "PARENT RECORD NAME", link: "http://google.com" },
-];
-
-
-const items1 = [
-  { name: "Menu Item 1", onClick: () => { console.log('clicked')} },
-  { name: "Menu Item 2", onClick: () => { console.log('clicked')} },
-  { name: "Menu Item 3", onClick: () => { console.log('clicked')} },
-];
-
-const items2 = [
-  { name: "Menu Item 1", onClick: () => { console.log('clicked')} },
-];
+import Tab from './components/Tab';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        
+        <TextField label="Label" placeholder="Default Placeholder" />
+        <Tab
+        data={[
+          {
+            name: "ITEM ONE",
+            content: <Badge value="first tab content" />
+          },
+          {
+            name: "ITEM TWO",
+            content: <Badge value="second tab content" />
+          },
+          {
+            name: "ITEM THREE",
+            content: (
+              <img
+                src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Logo.png"
+                width={200}
+              />
+            )
+          }
+        ]}
+      />
       </div>
     );
   }
