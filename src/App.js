@@ -13,12 +13,13 @@ import DropDownMenu from './components/DropDownMenu';
 import Tab from './components/Tab';
 import RadioGroupExample from './components/RadioGroupExample';
 import Spinner from './components/Spinner/Spinner';
+import Picklist from './components/Picklist';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Spinner size="x-small" color="#000" speed="5000"/>
+        <Picklist options={[ 'value1','value2']} onClick={val => console.log(val)} />
       </div>
     );
   }
