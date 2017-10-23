@@ -12,16 +12,13 @@ import Breadcrumb2 from './components/Breadcrumb';
 import DropDownMenu from './components/DropDownMenu';
 import Tab from './components/Tab';
 import RadioGroupExample from './components/RadioGroupExample';
+import Spinner from './components/Spinner/Spinner';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <RadioGroupExample
-          value={'3'}
-          color={'#b70000'}
-          colorChecked={'#2a6cd6'}
-        />
+        <Spinner size="x-small" color="#000" speed="5000"/>
       </div>
     );
   }
