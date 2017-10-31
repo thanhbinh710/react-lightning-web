@@ -1,13 +1,16 @@
 {
+  // The variable names
   "short_name": "React App",
   "name": "Create React App Sample",
   "icons": [
     {
+      // The size and type of image
       "src": "favicon.ico",
       "sizes": "192x192",
       "type": "image/png"
     }
   ],
+  // The URL and display
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#000000",
