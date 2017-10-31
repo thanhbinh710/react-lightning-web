@@ -6,6 +6,9 @@ This is another hobby project that attempts to implement react components based 
 ### Todo List:
 * Readme
 
+### Summary
+- Version : 0.1.0 
+
 ### Licenses
 
 ### Summary
