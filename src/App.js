@@ -20,13 +20,14 @@ import Slider from './components/Slider';
 import ToggleButton from './components/ToggleButton';
 import Modal from './components/Modal';
 import Toast from './components/Toast';
+import Plus from './components/Icons/plus.svg';
 
 class App extends Component {
 
   render () {
     return(
         <div>
-          <Toast value="test" />
+          <img src={Plus}/>
         </div>
 
     );
